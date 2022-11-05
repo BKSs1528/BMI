@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <label>Age</label>
+            <input type="number" min="2" max="120"/>
+            <span>ages: 2-120</span>
+        </div>
+        <div class="gender">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male">Male</input>
+            <input type="radio" name="gender" value="female">Female</input>
+        </div>
+        <div class="height">
+            <label for="height">Height(cm)</label>
+            <input id="height" type="number" placeholder="Height in cm" min="25"/>
+        </div>
+        <div class="weight">
+            <label for="weight">weight(kg)</label>
+            <input id="weight" type="number" placeholder="Weight in kg" min="1"/>
+        </div>
+        <button id="calculator">Calculate</button>
+        <button class="clear">Clear</button>
+    </form>
+
+    <div class="bmi">
+        <p>Your BMI is</p>
+        <div id="result"></div>
+        <p class="comment"></p>
+    </div>
+</body>
+</html>
